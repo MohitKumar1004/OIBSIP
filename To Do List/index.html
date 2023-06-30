@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="heading"><h1>TO-DO LIST</h1></div>
+    </div>
+    <div class="container">
+        <div class="details">
+            <form>
+                <div class="input-group">
+                    <label for="title">Enter Title</label>
+                    <div><input type="text" placeholder="Title" id="title" style="width:30vw"></div>
+                    <label for="description">Enter Description</label>
+                    <div><input type="text" placeholder="Description" id="description" style="width:30vw">
+                    </div>
+                    <label for="date">Enter Deadline Date</label>
+                    <div><input type="date"  id="date" style="width:30vw"></div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="button" value="Add" style="width: 10vw" onclick="add_item()">
+                </div>
+            </form>
+        </div>
+        <div class="tasks">
+            <table id="list_item">
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Check</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

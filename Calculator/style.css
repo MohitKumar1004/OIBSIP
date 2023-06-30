@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    justify-content: center;
+}
+body{
+    background-image: url('https://wallpapers.com/images/featured/math-zarpq292tmb3whun.jpg');
+}
+.container{
+    display:flex;
+    margin-top:1vh;
+}
+.container table{
+    width: 40vh;
+    height: 60vh;
+    padding: 5vh;
+    background-image: linear-gradient(45deg,white,grey,white,grey,white,grey,white,grey,white,grey,white);
+    border-radius: 10%;
+}
+.container table th{
+    padding: 2vh;
+    padding-bottom: 4vh;
+}
+.container table tr input{
+    width: 100%;
+    height: 6vh;
+    font-size: 3.5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+.container table tr td{
+    width: 100%;
+    height: 100%;
+    padding: 2vh;
+}
+.container table tr td div{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    min-width:8vh;
+    min-height:8vh;
+    position: relative;
+    background-image: linear-gradient(45deg,grey,white);
+}
+.title {
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255,0.8);
+}
+
+input[type="button"] {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    min-width:8vh;
+    min-height:8vh;
+    margin:0px 0px 6px 6px;
+    border-radius: 10px;
+    position: absolute;
+}
+input[type="button"]:active{
+    
+    margin:6px 0px 0px 0px;
+    min-width:8vh;
+    min-height:8vh;
+}
+#history {
+    background-color: white;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    min-height:5vh;
+    font-size: 35px;
+    border: 2px solid black;
+}
+#result {
+    background-color: white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border: 2px solid black;
+    text-align: right;
+    font-size: 60px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="title">The Calculator</div>
+  <div class="container">
+  <table>
+    <tr>
+      <td colspan="5"><div id="history">No history</div><div id="result">0</div></td>
+    </tr>
+    <tr>
+      <td><div class="functions"><input type="button" value="(" onclick="display('(')"></div></td>
+      <td><div class="functions"><input type="button" value=")" onclick="display(')')"></div></td>
+      <td><div class="functions"><input type="button" value="&pi;" onclick="display('3.14159265359')"></div></td>
+      <td><div class="delete"><input type="button" value="del" onclick="del()"></div></td>
+      <td><div class="allclear"><input type="button" value="AC" onclick="clr()"></div></td>
+    </tr>
+    <tr>
+      <td><div class="numbers"><input type="button" value="7" onclick="display('7')"></div></td>
+      <td><div class="numbers"><input type="button" value="8" onclick="display('8')"></div></td>
+      <td><div class="numbers"><input type="button" value="9" onclick="display('9')"></div></td>
+      <td><div class="functions"><input type="button" value="%" onclick="display('%')"></div></td>
+      <td><div class="functions"><input type="button" value="-" onclick="display('-')"></div></td>
+    </tr>
+
+    <tr>
+      <td><div class="numbers"><input type="button" value="4" onclick="display('4')"></div></td>
+      <td><div class="numbers"><input type="button" value="5" onclick="display('5')"></div></td>
+      <td><div class="numbers"><input type="button" value="6" onclick="display('6')"></div></td>
+      <td><div class="functions"><input type="button" value="*" onclick="display('*')"></div></td>
+      <td><div class="functions"><input type="button" value="/" onclick="display('/')"></div></td>
+    </tr>
+
+    <tr>
+    <tr>
+      <td><div class="numbers"><input type="button" value="1" onclick="display('1')"></div></td>
+      <td><div class="numbers"><input type="button" value="2" onclick="display('2')"></div></td>
+      <td><div class="numbers"><input type="button" value="3" onclick="display('3')"></div></td>
+      <td><div class="functions"><input type="button" value="+" onclick="display('+')"></div></td>
+      <td><div class="functions"><input type="button" value="&radic;" onclick="display('**0.5')"></div></td>
+    </tr>
+
+    <td><div class="functions"><input type="button" value="." onclick="display('.')"></div></td>
+    <td><div class="numbers"><input type="button" value="0" onclick="display('0')"></div></td>
+    <td><div class="functions"><input type="button" value="+/-" onclick="changeSign()"></div></td>
+    <td colspan="2"><div class="evaluate"><input type="button" value="Enter" onclick="evaluateEquation()"></div></td>
+    </tr>
+  </table>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

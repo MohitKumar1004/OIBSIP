@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  justify-content: center;
+}
+body {
+  background-image: url("https://elogii.com/blog/uploads/how-to-plan-better-delivery-schedules.jpg");
+}
+#heading {
+  background-color: rgb(255, 255, 255, 0.8);
+}
+h1 {
+  font-size: 50px;
+  background: linear-gradient(to right, red, blue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.container {
+  width: 100vw;
+  padding: 5vh;
+  display: flex;
+}
+.details {
+  margin: 2vh;
+  padding: 2vh;
+  width: 100%;
+  background-color: rgba(211, 95, 95, 0.8);
+}
+.tasks {
+  height: 60vh;
+  overflow-y: auto;
+  min-width: 65vw;
+}
+.tasks::-webkit-scrollbar {
+  display: none;
+}
+.form-group {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+input[type="button"] {
+  background-color: lightgreen;
+  padding: 1vw;
+}
+input[type="button"]:hover {
+  background-color: green;
+}
+label {
+  font-size: 30px;
+  margin: 10px;
+}
+input[type="text"],
+input[type="date"] {
+  font-size: 20px;
+  margin: 10px;
+}
+#list_item {
+  width: 60vw;
+  margin-left: 5vh;
+}
+
+#list_item tr {
+  background-color: rgb(88, 54, 54);
+}
+#list_item tr:first-child {
+  padding: 1vh;
+  font-size: 3.5vh;
+  background-color: rgb(107, 39, 39);
+}
+#list_item tr:first-child:hover {
+  transform: scale(1);
+}
+#list_item tr:hover {
+  transform: scale(1.02);
+}
+#list_item tr th {
+  padding: 3vh;
+  color: yellow;
+  text-decoration: underline;
+  width: 10vw;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+#list_item tr td {
+  padding: 3vh;
+  width: 10vw;
+  color: yellowgreen;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.0vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#list_item tr td:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#list_item tr td:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#list_item td button {
+  height: 10vh;
+  line-height: 0px;
+  background: none;
+  font-size: 6vh;
+  border: none;
+  color: white;
+}
+#list_item td button:hover {
+  transform: scale(1.25);
+}
+#description {
+  height: 20vh;
+}
